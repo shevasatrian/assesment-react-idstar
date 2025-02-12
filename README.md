@@ -19,6 +19,7 @@ This is a simple inventory management system built with React.js + Vite using Ma
   cd assesment-react-idstar
   ```
 - 2️⃣ Install Dependencies
+  
   Using npm:
   ```
   npm install
