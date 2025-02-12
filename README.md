@@ -36,4 +36,39 @@ This is a simple inventory management system built with React.js + Vite using Ma
   ```
   yarn dev
   ```
+# 📦 Libraries & Tools Used
+- React.js (Vite) - Fast build tool for React
+  ```
+  npm create vite@latest my-app --template react
+  cd my-app
+  npm install
+  npm run dev
+  ```
+- Material UI - UI components (Minimals UI Kit)
+  using npm
+  ```
+  npm install @mui/material @mui/icons-material @emotion/react @emotion/styled
+  ```
+  using yarn
+  ```
+  yarn add @mui/material @mui/icons-material @emotion/react @emotion/styled
+  ```
+- React Router - Client-side routing
+  using npm
+  ```
+  npm install react-router-dom
+  ```
+  using yarn
+  ```
+  yarn add react-router-dom
+  ```
+- SweetAlert2 - Popup notifications
+  using npm
+  ```
+  npm install sweetalert2
+  ```
+  using yarn
+  ```
+  yarn add sweetalert2
+  ```
 
