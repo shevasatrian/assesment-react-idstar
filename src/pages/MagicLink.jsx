@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { getAuthToken, getUserEmail, removeAuthToken, setAuthToken } from "../utils/Auth"
 import { Card, Button } from '@mui/material';
 import { useNavigate } from "react-router-dom";
+import Header from "../components/Header";
 
 const MagicLink = () => {
     const [token, setToken] = useState('')
@@ -33,7 +34,8 @@ const MagicLink = () => {
 
     return (
         <>
-            <Card style={{ padding: 20, maxWidth: 400, margin: 'auto' }}>
+        <Header />
+            <Card style={{ padding: 20, maxWidth: 400, margin: 'auto', marginTop: 50 }}>
                 <h2>Magic Link</h2>
                 {token ? (
                     <>
