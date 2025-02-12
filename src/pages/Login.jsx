@@ -27,8 +27,8 @@ const Login = () => {
     return (
         <>
             <Header />
-            <Container sx={{ mt: 8 }}>
-                <Card sx={{ p: 1, mx: 16 }}>
+            <Container sx={{ mt: 8, display: 'flex', justifyContent: 'center' }}>  
+                <Card sx={{ p: 2, maxWidth: 600, width: '100%' }}>
                     <h2>Login with magic link</h2>
                     <form onSubmit={handleSubmit}>
                         <TextField

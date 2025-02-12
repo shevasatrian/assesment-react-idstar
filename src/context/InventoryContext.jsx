@@ -1,7 +1,7 @@
-import { createContext, useContext, useState, useEffect } from "react";
-import Swal from "sweetalert2";
+import { createContext, useContext, useState, useEffect } from "react"
+import Swal from "sweetalert2"
 
-const InventoryContext = createContext();
+const InventoryContext = createContext()
 
 const defaultData = [
     { id: 1, name: "Aren Sugar", qty: 1, uom: "kg", price: 60000 },
@@ -17,12 +17,12 @@ export const InventoryProvider = ({ children }) => {
     const [inventory, setInventory] = useState([])
 
     useEffect(() => {
-        const storedInventory = JSON.parse(localStorage.getItem("inventory"));
+        const storedInventory = JSON.parse(localStorage.getItem("inventory"))
         if (storedInventory) {
-            setInventory(storedInventory);
+            setInventory(storedInventory)
         } else {
-            localStorage.setItem("inventory", JSON.stringify(defaultData));
-            setInventory(defaultData);
+            localStorage.setItem("inventory", JSON.stringify(defaultData))
+            setInventory(defaultData)
         }
     }, [])
 
@@ -45,10 +45,10 @@ export const InventoryProvider = ({ children }) => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                const updatedInventory = inventory.filter((item) => item.id !== id);
-                setInventory(updatedInventory);
-                localStorage.setItem("inventory", JSON.stringify(updatedInventory));
-                Swal.fire("Deleted", "Item has been deleted.", "success");
+                const updatedInventory = inventory.filter((item) => item.id !== id)
+                setInventory(updatedInventory)
+                localStorage.setItem("inventory", JSON.stringify(updatedInventory))
+                Swal.fire("Deleted", "Item has been deleted.", "success")
             }
         })
     }
@@ -60,4 +60,4 @@ export const InventoryProvider = ({ children }) => {
     )
 }
 
-export const useInventory = () => useContext(InventoryContext);
+export const useInventory = () => useContext(InventoryContext)
