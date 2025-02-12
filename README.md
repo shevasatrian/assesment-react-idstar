@@ -11,7 +11,7 @@ Currently, two official plugins are available:
 
 This is a simple inventory management system built with React.js + Vite using Material UI for the UI components (Minimals UI Kit). It includes authentication, inventory management with CRUD operations, COGS calculations, search functionality, and pagination
 
-# How to set up and run the application locally
+# 🚀 How to set up and run the application locally
 
 - 1️⃣ Clone the Repository
   ```
