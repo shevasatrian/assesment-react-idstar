@@ -29,6 +29,7 @@ This is a simple inventory management system built with React.js + Vite using Ma
   yarn install
   ```
 - 3️⃣ Run the Application
+
   using npm:
   ```
   npm run dev
@@ -46,6 +47,7 @@ This is a simple inventory management system built with React.js + Vite using Ma
   npm run dev
   ```
 - Material UI - UI components (Minimals UI Kit)
+
   using npm
   ```
   npm install @mui/material @mui/icons-material @emotion/react @emotion/styled
@@ -55,6 +57,7 @@ This is a simple inventory management system built with React.js + Vite using Ma
   yarn add @mui/material @mui/icons-material @emotion/react @emotion/styled
   ```
 - React Router - Client-side routing
+
   using npm
   ```
   npm install react-router-dom
@@ -64,6 +67,7 @@ This is a simple inventory management system built with React.js + Vite using Ma
   yarn add react-router-dom
   ```
 - SweetAlert2 - Popup notifications
+
   using npm
   ```
   npm install sweetalert2
